@@ -1,0 +1,18 @@
+@use'custom';
+
+// Importando os componentes
+
+@use'components/animation';
+@use'components/button';
+@use'components/mixins';
+@use'components/typography';
+
+// Importando as sections
+@use'sections/navbar';
+@use'sections/intro-section';
+@use'sections/chef';
+@use'sections/food-menu';
+@use'sections/social-media';
+@use'sections/about';
+@use'sections/contact';
+@use'sections/footer';
