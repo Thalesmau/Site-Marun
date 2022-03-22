@@ -11174,7 +11174,7 @@ textarea.form-control-lg {
 }
 @media screen and (min-width: 769px) {
   .logo {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -11186,6 +11186,7 @@ textarea.form-control-lg {
 
 .img_header_1 {
   background: #b73d26;
+  margin-top: 56px;
 }
 @media screen and (max-width: 768px) {
   .img_header_1 {

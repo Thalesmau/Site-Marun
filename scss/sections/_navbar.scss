@@ -31,7 +31,7 @@
     width: 5rem;
 
     @media screen and (min-width: 769px) {
-        display: none;
+        display: none!important;
     }
 }
 
