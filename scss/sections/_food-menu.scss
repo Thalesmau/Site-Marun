@@ -1,0 +1,89 @@
+@use'../custom' as *;
+@use'../components/mixins' as *;
+
+.img_food {
+    width: 70%;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+.separate {
+    color: #909090;
+    width: 80%;
+    margin: 0 auto;
+}
+.img_drink {
+    width: 80%;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+.display-6 {
+    font-family: 'Encode Sans Condensed', sans-serif;
+
+    &--header {
+        @include text-primary();
+        margin: 0 0 2.5rem 0;
+        letter-spacing: .5rem;
+        text-transform: uppercase;
+    
+    }
+
+    &--body {
+        width: 300px;
+        font-weight: 900;
+        color: $black;
+        font-size: 2.5rem;
+        line-height: 60px;
+        letter-spacing: .1rem;
+
+        .text-primary {
+            @include text-primary();
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+            
+    }
+
+    &--footer {
+        font-size: 16px;
+        font-weight: 400;
+        color: $black;
+        margin-top: 15px;
+        width: 250px;
+
+        .font-bold {
+            @include text-bold();
+        }
+        .text-primary {
+            @include text-primary();
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
+
+    button {
+        background-color: #ff8A00;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin-top: 10px;
+        text-transform: uppercase;
+    }
+
+}
+@media screen and (max-width: 425px) {
+    .img_drink {
+        display: none;
+    }
+    .img_food {
+        display: none;
+    }
+}

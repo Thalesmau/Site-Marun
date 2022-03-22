@@ -1,0 +1,7 @@
+@use'../custom' as *;
+@use'../components/mixins' as *;
+
+.img_chef {
+    width: 70%;
+    border-radius: 10px;
+}

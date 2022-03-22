@@ -1,0 +1,61 @@
+@use'../custom' as *;
+@use'../components/mixins' as *;
+
+.onda {
+    transform: scaleX(-1);
+}
+.footer {
+    display: flex;
+    align-items: center;
+    background-color: $black;
+    height: 300px;
+
+    @media screen and (max-width: 768px) {
+        height: 100%;
+        padding: 30px;
+
+        .link {
+            margin-bottom: 2rem;
+        }
+
+    }
+
+    img {
+        height: 6rem;
+    }
+
+    h4 {
+        color: $white;
+        font-size: 1.3rem;
+    }
+
+    .link {
+        @include text-secondary();
+        text-decoration: none;
+    }
+
+    i {
+        padding: 10px;
+        text-align: center;
+        background-color: $primary;
+        border-radius: 50%;
+        text-decoration: none;
+        color: $white;
+        font-size: 1.3rem;
+    }
+
+}
+
+.onda {
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+        
+}
+
+.img_footer_2 {
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+    
+}

@@ -1,0 +1,84 @@
+@use'../custom' as *;
+@use'../components/mixins' as *;
+
+.sobre {
+    background-image: url('../../images/img_ouro_velho.svg');
+    height: 500px;
+
+    h2 {
+        text-align: center;
+        align-self: center;
+        font-weight: 800;
+        font-size: 2.8rem;
+    }
+}
+
+.about {
+    background: url('../../images/img_2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 35rem;
+    align-items: center; 
+    display: flex;
+}
+
+.display-7 {
+    font-family: 'Encode Sans Condensed', sans-serif;
+    color: #fff;
+    padding: 35px;
+    background-color: rgba(183, 61, 38, 0.8);
+    margin-bottom: 0!important;
+    width: 500px;
+    height: 35rem;
+    float: right;
+    margin-right: 10%;
+
+    &--body {
+        font-weight: 900;
+        color: $white;
+        font-size: 2rem;
+        letter-spacing: .1rem;
+        width: 100px;
+
+        .text-primary {
+            @include text-primary();
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            font-size: 1rem;
+        }
+            
+    }
+
+    &--description {
+        font-size: 16px;
+        font-weight: 400;
+        color: $white;
+        margin-top: 15px;
+        text-align: left;
+        width: 100px;
+
+        .font-bold {
+            @include text-bold();
+        }
+        .text-secondary {
+            @include text-secondary();
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            font-size: 12px;
+        }
+
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+        
+}

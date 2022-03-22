@@ -1,0 +1,36 @@
+@use'../custom' as *;
+@use'../components/mixins' as *;
+
+.display-5 {
+    margin-bottom: 1rem;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    width: 400px;
+    margin-left: 25%;
+
+    &--intro {
+        display: inline-block;
+        font-weight: 800;
+        font-family: 'Encode Sans Condensed', sans-serif;
+        letter-spacing: .1rem;
+
+        .text-secondary {
+            @include text-secondary();
+        }
+    }
+
+    &--description {
+        font-size: 1rem;
+        display: block;
+        margin-top: 1.2rem;
+        font-family: 'Encode Sans Condensed', sans-serif;
+
+        .font-bold {
+            @include text-bold();
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        margin-left: 0;
+    }
+}

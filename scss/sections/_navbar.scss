@@ -1,0 +1,42 @@
+@use'../custom' as *;
+@use'../components/mixins' as *;
+
+
+.menu {
+    @include background;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    li {
+        padding: 0 0.9rem;
+        font-size: 1rem;
+
+        a {
+            color: $white!important;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        i {
+            font-size: 1.3rem;
+        }
+
+        &:hover {
+            a {
+                color: $secondary!important;
+            }
+        }
+    }
+}
+
+.logo {
+    width: 5rem;
+
+    @media screen and (min-width: 769px) {
+        display: none;
+    }
+}
+
+.social {
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}

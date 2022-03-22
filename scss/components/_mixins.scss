@@ -1,0 +1,18 @@
+@use'../custom' as *;
+
+
+@mixin background {
+    background-color: $primary;
+}
+
+@mixin text-primary {
+    color: $primary;
+}
+
+@mixin text-secondary {
+    color: $secondary;
+}	
+
+@mixin text-bold {
+    font-weight: bold;
+}

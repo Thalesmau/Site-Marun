@@ -1,0 +1,39 @@
+@use'../custom' as *;
+@use'../components/mixins' as *;
+
+.img_header_1 {
+    background: $primary;
+    margin-top: 56px;
+
+    @media screen and (max-width: 768px) {
+        display: none;;
+    }
+        
+}
+.intro-section {
+    background: url('../../images/img_header_2.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 27rem;
+    align-items: center; 
+    display: flex;
+}
+
+.img_header_3 {
+    background: $primary;
+    padding-bottom: 5px;
+
+    @media screen and (max-width: 768px) {
+        display: none;;
+    }
+}
+
+.img_header_4 {
+    transform: scaley(-1);
+
+    @media screen and (max-width: 768px) {
+        display: none;;
+    }
+}
