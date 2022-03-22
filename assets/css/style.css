@@ -11186,7 +11186,6 @@ textarea.form-control-lg {
 
 .img_header_1 {
   background: #b73d26;
-  margin-top: 56px;
 }
 @media screen and (max-width: 768px) {
   .img_header_1 {
@@ -11220,6 +11219,18 @@ textarea.form-control-lg {
 }
 @media screen and (max-width: 768px) {
   .img_header_4 {
+    display: none;
+  }
+}
+
+.flutuante {
+  position: fixed;
+  top: 5px;
+  margin-left: 15%;
+  z-index: 1043;
+}
+@media screen and (max-width: 768px) {
+  .flutuante {
     display: none;
   }
 }

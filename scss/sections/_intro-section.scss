@@ -3,7 +3,6 @@
 
 .img_header_1 {
     background: $primary;
-    margin-top: 56px;
 
     @media screen and (max-width: 768px) {
         display: none;;
@@ -32,6 +31,17 @@
 
 .img_header_4 {
     transform: scaley(-1);
+
+    @media screen and (max-width: 768px) {
+        display: none;;
+    }
+}
+
+.flutuante {
+    position: fixed;
+    top: 5px;
+    margin-left: 15%;
+    z-index: 1043;
 
     @media screen and (max-width: 768px) {
         display: none;;
