@@ -1,4 +1,12 @@
 # Sobre o Projeto
+Desafio de construir uma página instucional seguindo o design que foi enviado.
 
-# Ferramentas utiizadas
+# Ferramentas utilizadas
+
+- NodeJs
+- HTML
+- CSS
+- SASS
+- Bootstrap
+- Fontawesome
 
